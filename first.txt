@@ -1,0 +1,17 @@
+1. change the order of words in the string
+    eg. s="This is an apple!", you need to keep the "This" in the beginning and "!" in the end of string and randomly change the rest of words. the output may be : "This an is apple!", "This apple is an!". the length of string may be different.
+2. implement "queue" and "dequeue"by using 2 stacks
+3. how to sync the repo form remote by using git command
+4. oop question. how the children classes inherit form parent class?
+5.talk about your previous working experience
+6.how to traverse a tree
+7.Dynamic programming: get the coordinates of text words from an pic. suppose you already have an function (bool detect(pic)) to check whether it contains an word or not. 
+ 
+Additional questions they may ask
+ 
+for i in f(5):
+    print i
+The result should be 0 1 7 24 32 64(I don¡¯t remember the number exactly)
+give them the function of f(5).
+and asked me about how to open file close file in python, what damage would happened during open the file.
+also asked me use two stack to simulate a Queue.

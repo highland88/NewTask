@@ -1,0 +1,43 @@
+class home(object):
+    __name=''
+    __age=0
+    __gender=''
+
+    def __init__(self,name,age,gender):
+        self.__name=name
+        self.__age=age
+        self.__gender=gender
+
+    def getname(self,name):
+        return self.__name
+
+    def toString(self):
+        print "%s is %d years old %s." % (self.__name,
+                                          self.__age,
+                                          self.__gender)
+        
+Yuan=home('Lan',27,'Male')
+print Yuan.toString()
+
+class phone(home):
+    __phonenum=0
+
+    def __init__(self,name,age,gender,phonenum):
+        #super(phone,self).__init__(name,age,gender)
+        home.__init__(self,name,age,gender)
+        self.__phonenum=phonenum
+
+    def testit(self,age):
+        self.__age+=1
+        print self.__age
+
+    def toString2(self):
+        print "%s is %d years old %s. Tel: %d" % (self.__name,
+                                                    self.__age,
+                                                    self.__gender,
+                                                    self.__phonenum)
+
+Peichen=phone("Ben",27,"Female",773)
+print Peichen.toString()
+Peichen.testit(34)
+print Peichen.toString2()
